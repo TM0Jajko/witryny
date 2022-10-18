@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.1px;
+    background-color: #eee;
+}
+.header{
+    height: 150px;
+}
+.header1{
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-image: url("mis.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header2{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+.header2 h1{
+    margin: 0;
+    line-height: 150px;
+    letter-spacing: 10ox;
+    font-size: 300%;
+}
+.table, .zamow, .zamowienie{
+    height: 500px;
+    width: 33%;
+    float: left;
+    padding-top: 5%;
+}
+.zamow{
+    background-color: #ccc;
+    width: 34%;
+}
+.stopka{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    padding: 1px 20px;
+    clear: both;
+}
+.table table{
+    width: 70%;
+    margin: 3% auto;
+    border: 2px dashed red;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px dashed red;
+}

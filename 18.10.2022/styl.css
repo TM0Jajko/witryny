@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.top{
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: rgb(158, 4, 4);
+    text-align: center;
+}
+.middleleft{
+    background-color: rgb(73, 72, 72);
+    width: 75%;
+    height: 65%;
+}
+.middleright{
+    background-color: grey;
+    height: 65%;
+    width: 25%;
+}
+.footer{
+    clear: both;
+    background-color: rgb(28, 28, 184);
+}
