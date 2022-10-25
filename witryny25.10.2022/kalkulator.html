@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator</title>
+</head>
+<body>
+	x <input type="number" id="x">
+	y <input type="number" id="y">
+	<input type="button" value="+" onclick="fun(0)">
+	<input type="button" value="-" onclick="fun(1)">
+	<input type="button" value="*" onclick="fun(2)">
+	<input type="button" value="/" onclick="fun(3)">
+	<input type="button" value="xXx" onclick="fun(4)">
+	<p id="wyswietlacz">Tu będzie twój wynik: </p>
+	<script>
+	//	function dodaj(){
+	//		const x = document.getElementById("x").value*1;
+	//		const y = document.getElementById("y").value*1;
+	//		const wyswietlacz = document.getElementById("wyswietlacz");
+	//		wyswietlacz.innerText =  "Twoj wynik to: " + (x+y);
+	//	}
+	//	function odejmij(){
+	//		const x = document.getElementById("x").value*1;
+	//		const y = document.getElementById("y").value*1;
+	//		const wyswietlacz = document.getElementById("wyswietlacz");
+	//		wyswietlacz.innerText =  "Twoj wynik to: " + (x-y);
+	//	}
+	//	function pomnoz(){
+	//		const x = document.getElementById("x").value*1;
+	//		const y = document.getElementById("y").value*1;
+	//		const wyswietlacz = document.getElementById("wyswietlacz");
+	//		wyswietlacz.innerText =  "Twoj wynik to: " + (x*y);
+	//	}
+	//	function podziel(){
+	//		const x = document.getElementById("x").value*1;
+	//		const y = document.getElementById("y").value*1;
+	//		const wyswietlacz = document.getElementById("wyswietlacz");
+	//		wyswietlacz.innerText =  "Twoj wynik to: " + (x/y);
+	//	}
+	const wyswietlacz = document.getElementById("wyswietlacz");
+
+	function fun(a, b, c) {
+		console.log(a);
+
+		switch (a) {
+			case 0: wyswietlacz.innerHTML = "dodawanie"; break;
+			case 1: wyswietlacz.innerHTML = "odejmowanie"; break;
+			case 2: wyswietlacz.innerHTML = "mnożenie"; break;
+			case 3: wyswietlacz.innerHTML = "dzielenie"; break;
+			
+				default: wyswietlacz.innerHTML = "Podaj dane i wybierz działanie"; break;
+		}
+	}
+
+			function dodaj(){
+	  	const x = Number(document.getElementById("x").value*1);
+			const y = parseInt(document.getElementById("y").value*1);
+			let temp = x+y;
+			wyswietlacz.innerText =  "Wynik: " +temp;
+			if (temp == 0) {
+				wyswietlacz.style.backgroundColor = "cornflowerblue";
+				wyswietlacz.style.fontFamily = "Comic Sans Ms";
+			} else {
+				if(temp > 0) {
+					wyswietlacz.style.backgroundColor = "lime";
+				} else {
+					wyswietlacz.style.backgroundColor = "rgb(255,100,100";
+				}
+			}
+	
+		}
+	</script>
+</body>
+</html>
